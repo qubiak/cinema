@@ -1,0 +1,18 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <include file="Version/Users/users.xml" relativeToChangelogFile="true"/>
+    <include file="Version/Users/addAutoincrementUsers.xml" relativeToChangelogFile="true"/>
+    <include file="Version/Films/films.xml" relativeToChangelogFile="true"/>
+    <include file="Version/Films/addAutoincrementFilms.xml" relativeToChangelogFile="true"/>
+    <include file="Version/FilmShow/FilmShow.xml" relativeToChangelogFile="true"/>
+    <include file="Version/FilmShow/addAutoincrementFilmShow.xml" relativeToChangelogFile="true"/>
+    <include file="Version/Reservations/Reservations.xml" relativeToChangelogFile="true"/>
+    <include file="Version/Reservations/addAutoincrementReservations.xml" relativeToChangelogFile="true"/>
+
+
+</databaseChangeLog>
