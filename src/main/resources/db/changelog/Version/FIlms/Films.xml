@@ -4,13 +4,13 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.7
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.7.xsd">
 
-    <changeSet id="1" author="qubiak">
+    <changeSet id="4" author="qubiak">
         <createTable tableName="films">
             <column name="id" type="int" autoIncrement="false">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
             <column name="name" type="varchar(255)"/>
-            <column name="kategory" type="varchar(255)"/>
+            <column name="category" type="varchar(255)"/>
             <column name="year_of_production" type="int"/>
         </createTable>
     </changeSet>

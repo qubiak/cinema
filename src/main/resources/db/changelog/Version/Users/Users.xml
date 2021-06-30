@@ -15,6 +15,7 @@
             <column name="user_password" type="varchar(32)"/>
             <column name="email" type="varchar(255)"/>
         </createTable>
+
     </changeSet>
 
 </databaseChangeLog>

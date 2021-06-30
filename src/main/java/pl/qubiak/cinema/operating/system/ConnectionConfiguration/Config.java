@@ -17,21 +17,12 @@ import java.util.Collections;
 @Configuration
 public class Config {
 
-    @Value("${password}")
-    private String password;
-
-    @Value("${url}")
-    private String url;
-
-    @Value("${username}")
-    private String username;
-
     @Bean
     public DataSource getDataSource() {
         DataSourceBuilder dataSourceBuilder = DataSourceBuilder.create();
-        dataSourceBuilder.url(url);
-        dataSourceBuilder.username(username);
-        dataSourceBuilder.password(password);
+        dataSourceBuilder.url("jdbc:mysql://localhost:3306/cinema?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC");
+        dataSourceBuilder.username("root");
+        dataSourceBuilder.password("mysql");
         dataSourceBuilder.driverClassName("com.mysql.cj.jdbc.Driver");
         return dataSourceBuilder.build();
     }

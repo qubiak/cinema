@@ -13,6 +13,8 @@
     <include file="Version/FilmShow/addAutoincrementFilmShow.xml" relativeToChangelogFile="true"/>
     <include file="Version/Reservations/Reservations.xml" relativeToChangelogFile="true"/>
     <include file="Version/Reservations/addAutoincrementReservations.xml" relativeToChangelogFile="true"/>
+    <include file="Version/Tokens/token.xml" relativeToChangelogFile="true"/>
+    <include file="Version/Tokens/addAutoincrementToken.xml" relativeToChangelogFile="true"/>
 
 
 </databaseChangeLog>

@@ -4,14 +4,14 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.7
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.7.xsd">
 
-    <changeSet id="2" author="qubiak">
-        <createTable tableName="reservations">
+    <changeSet id="9" author="qubiak">
+        <createTable tableName="token">
             <column name="id" type="int" autoIncrement="false">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
             <column name="user_id" type="int"/>
-            <column name="film_id" type="int"/>
-            <column name="filmShow_id" type="int"/>
+            <column name="value" type="varchar(255)"/>
+
         </createTable>
     </changeSet>
 
