@@ -5,17 +5,15 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import pl.qubiak.cinema.operating.system.Model.FilmsModel;
 import pl.qubiak.cinema.operating.system.Model.UserModel;
 import pl.qubiak.cinema.operating.system.Repository.FilmRepository;
-import pl.qubiak.cinema.operating.system.Repository.FilmShowRepository;
-import pl.qubiak.cinema.operating.system.Repository.ReservationsRepository;
 import pl.qubiak.cinema.operating.system.Repository.UserRepository;
 
 @Configuration
 public class initialData {
 
-    public initialData(UserRepository userRepository, FilmRepository filmRepository, FilmShowRepository filmShowRepository,
-                       ReservationsRepository reservationsRepository, PasswordEncoder passwordEncoder){
+    public initialData(UserRepository userRepository, FilmRepository filmRepository, PasswordEncoder passwordEncoder){
 
         //-----USERS-----
+
         UserModel appUserJanusz = new UserModel();
         appUserJanusz.setUsername("Janusz");
         appUserJanusz.setPassword(passwordEncoder.encode("Janusz123"));
